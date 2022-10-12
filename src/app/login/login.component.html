@@ -1,0 +1,21 @@
+<div class="container border border-shadow">
+    <div class="row">
+    <form [formGroup]="userForm">
+        <div>
+            <label class="form-label mt-4">Enter user name :</label>
+            <input class ="form-control-sm mt-4 ms-2" type="text" id="userName" formControlName="userName" placeholder="username"/>
+        </div>
+        <div>
+            <label class="form-label mt-2">Password :</label>
+            <input class ="form-control-sm ms-5" type="password" id="password" formControlName = "password"/>
+        </div>
+        <div>
+            <button class="btn btn-primary" (click) = "submit()">Submit</button>
+        </div>
+    </form>
+    <div>
+        <a href = "/"> Return to main page</a>
+    </div>
+    </div>
+</div>
+<!-- <div>{{recieved}}</div> -->

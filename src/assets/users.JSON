@@ -1,0 +1,41 @@
+    [{
+        "userName" : "shinto", 
+        "name" : "Shinto" , 
+        "password":"shinto123",
+        "age":24,
+        "dob":"10-02-1998",
+        "email":"shintosagacious.@gmail.com",
+        "contact":9003140569},
+    {
+        "userName" : "senthilm", 
+        "name" : "Senthil" , 
+        "password":"senthil123",
+        "age":23,
+        "dob":"10-03-1999",
+        "email":"senthil@gmail.com",
+        "contact":9003718979},
+    {
+        "userName" : "prass", 
+        "name" : "Prassanna" , 
+        "password":"prass123",
+        "age":25,
+        "dob":"10-04-1997",
+        "email":"prassanna@gmail.com",
+        "contact":8003718998},
+    {
+        "userName" : "venki", 
+        "name" : "Venkatesan" , 
+        "password":"venki123",
+        "age":26,
+        "dob":"13-09-1997",
+        "email":"venki@gmail.com",
+        "contact":7003718998},
+    {
+        "userName" : "anu", 
+        "name" : "Yamini" , 
+        "password":"anu123",
+        "age":24,
+        "dob":"12-10-1999",
+        "email":"venki@gmail.com",
+        "contact":6003718997}
+    ]

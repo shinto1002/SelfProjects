@@ -1,0 +1,56 @@
+<div>
+    <form [formGroup]="myForm">
+        <div>
+        <label>Enter name</label>
+        <input type="text" formControlName="nam" id="nam"/>
+      </div>
+      <div>
+        <input type="checkbox" formControlName="check" id="check" />
+      <br/>
+        <label>Checkbox</label>
+      </div>
+      <div>
+        <label>1</label>
+        <input type="radio" formControlName="rad" id="rad" value="1"/>
+        <label>0</label>
+        <input type="radio" formControlName="rad" id="rad" value="0"/>
+      </div>
+      <div>
+        <label>Dropdown</label>
+        <select formControlName="drop" id="drop">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+        </select>
+      </div>
+      <div>
+        <input formControlName="identify" hidden/>
+      </div>
+      <div>
+        <button (click)="save()">Save</button>
+      </div>
+      
+    </form>
+    
+    <table *ngIf = "newval.length != 0">
+      <thead>
+      <th>S.no</th>
+      <th>Name</th>
+      <th>Check box</th>
+      <th>Radio</th>
+      <th>Drop down</th>
+      </thead>
+      <tbody>
+        <tr *ngFor = "let item of newval; let i=index">
+          <td>{{i+1}}</td>
+          <td>{{item.nam}}</td>
+          <td>{{item.check ? 'checked' : 'unchecked'}}</td>
+          <td>{{item.rad}}</td>
+          <td>{{item.drop}}</td>
+          <td><button (click)="edit(i,item)">Edit</button></td>
+          <td><button (click)="del(i)">Delete</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

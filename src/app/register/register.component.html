@@ -1,0 +1,42 @@
+<div class="container">
+    <form [formGroup] = "registerForm" class="was-validated">
+        <div class="mt-2">
+            <label class="form-label">Enter user name</label>
+            <input class="form-control-sm ms-1" type="text" id="username" formControlName = "username" required/>
+            <div class="invalid-feedback mb-1">* User name is mandatory</div>
+        </div>
+        <div class="mt-2">
+            <label class="form-label">Enter Name</label>
+            <input  class="form-control-sm ms-2" type="text" id="name" formControlName = "name"/>
+        </div>
+         <div class="mt-2">
+            <label class="form-label">Enter password</label>
+            <input  class="form-control-sm ms-2" type="password" id="password" formControlName = "password" required/>
+            <div class="invalid-feedback mb-1">* Password is mandatory</div>
+        </div>
+        <div class="mt-2">
+            <label class="form-label">Enter age</label>
+            <input  class="form-control-sm ms-2" type="text" id="age" formControlName = "age"/>
+        </div>
+        <div class="mt-2" >
+            <label class="form-label">Enter date of birth</label>
+            <input  class="form-control-sm ms-2" type="date" id="dob" formControlName = "dob"/>
+        </div>
+        <div class="mt-2">
+            <label class="form-label">Enter contact number</label>
+            <input  class="form-control-sm ms-2" type="text" id="contact" maxlength="10" formControlName = "contact"/>
+        </div> 
+        <div class="mt-2">
+            <label class="form-label">Enter email id</label>
+            <input  class="form-control-sm ms-2" type="text" id="number" formControlName = "email"/>
+        </div>
+        <div class="mt-2">
+            <button class="btn btn-primary rounded" type ="button" (click) = "register()"> Register </button>
+        </div>
+        <div class="mt-2">
+            <a href = "/"> Return to main page</a>
+        </div>
+
+    </form>
+
+</div>
